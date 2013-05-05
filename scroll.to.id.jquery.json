@@ -4,7 +4,7 @@
     "description": "jQuery plugin to scroll to DOM element by ID",
     "keywords": [
         "scroll",
-        "scroll to id"
+        "scrollToId"
     ],
     "version": "0.0.1",
     "author": {
