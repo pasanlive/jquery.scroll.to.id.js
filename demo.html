@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scroll To ID - Demo</title>
+
+    <style type="text/css">
+        body {
+            background-color: #eee;
+            margin: 0;
+            padding: 0;
+        }
+
+        #content {
+            position: absolute;
+            width: 80%;
+            height: 100%;
+            overflow: scroll;
+        }
+
+        #side_bar {
+            position: absolute;
+            width: 20%;
+            height: 100%;
+            overflow: auto;
+            background-color: #aaa;
+            right: 0;
+        }
+
+        .block {
+            width: 200px;
+            height: 70px;
+            border: 1px solid #999;
+            background-color: #ccc;
+            text-align: center;
+            padding-top: 50px;
+        }
+
+        #one {
+            position: absolute;
+            left: 50px;
+            top: 50px;
+
+        }
+
+        #two {
+            position: absolute;
+            left: 1000px;
+            top: 800px;
+
+        }
+
+        #end {
+            position: absolute;
+            left: 1500px;
+            top: 1000px;
+        }
+    </style>
+
+    <script type="text/javascript" src='http://code.jquery.com/jquery-1.9.1.min.js'></script>
+    <script type="text/javascript" src="jquery.scroll.to.id.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#moveToOne').click(function(){
+                $('#content').scrollToID('#one')
+            })
+
+            $('#moveToTwo').click(function(){
+                $('#content').scrollToID('#two')
+            })
+        })
+    </script>
+</head>
+<body>
+<div id="content">
+    <div id="one" class="block">ONE</div>
+    <div id="two" class="block">TWO</div>
+    <div id="end">&nbsp;</div>
+
+</div>
+<div id="side_bar">
+    <button id="moveToOne">Move to ONE</button>
+    <button id="moveToTwo">Move to TWO</button>
+</div>
+
+</body>
+</html>
