@@ -1,0 +1,28 @@
+{
+    "name": "scroll.to.id",
+    "title": "Scroll to ID",
+    "description": "jQuery plugin to scroll to DOM element by ID",
+    "keywords": [
+        "scroll",
+        "scroll to id"
+    ],
+    "version": "0.0.1",
+    "author": {
+        "name": "Pasan Buddhika Weerathunga",
+        "url": "http://pasanlive.com",
+        "email": "me@pasanlive.com"
+    },
+    "licenses": [
+        {
+            "type": "Apache License, Version 2.0",
+            "url" : "http://www.apache.org/licenses/LICENSE-2.0"
+        }
+    ],
+    "bugs": "https://github.com/pasanlive/jquery.scroll.to.id.js/issues",
+    "homepage": "https://github.com/pasanlive/jquery.scroll.to.id.js",
+    "docs": "https://github.com/pasanlive/jquery.scroll.to.id.js/wiki",
+    "download": "https://github.com/pasanlive/jquery.scroll.to.id.js/archive/master.zip",
+    "dependencies": {
+        "jquery": ">=1.9"
+    }
+}
