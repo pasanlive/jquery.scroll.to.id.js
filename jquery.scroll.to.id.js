@@ -14,7 +14,7 @@
 
         if (!(this instanceof $)) return $.fn.scrollToID.apply($('html, body'), arguments);
 
-        return $(this).stop().animate({
+        return $('body,html').stop().animate({
             scrollLeft: x,
             scrollTop: y
         });
